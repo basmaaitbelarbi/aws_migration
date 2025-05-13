@@ -1,0 +1,1 @@
+- AWS RDS database created, and connected to local postgres pgadmin
