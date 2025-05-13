@@ -6,9 +6,9 @@ Steps:
 
 1. Data Modeling and Ingestion:
 
-    - Creating your database instance (Amazon RDS for SQL Server)
+    - Creating our database instance (Amazon RDS for SQL Server)
 
-    - Designing and creating tables/schemas for your sales data
+    - Designing and creating tables/schemas for our sales data
 
     - Ingesting (importing) data into these tables
 
