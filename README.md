@@ -14,14 +14,10 @@ Steps:
 
 2. Querying and Analytics (Preparing queries)
 
-3. Visualization and Dashboards (Using Amazon QuickSight, ClicData, or other BI platforms to connect directly to our Amazon RDS SQL Server database, also scheduling data refreshes for real-time insights)
+3. Visualization and Dashboards (Using Amazon QuickSight and Tableau with scheduling data refreshes for real-time insights)
 
 References: 
 
 - https://dev.to/aws-builders/deploy-sql-server-on-amazon-rds-a-step-by-step-guide-457e
 
 - https://aws.amazon.com/getting-started/hands-on/visualize-data-amazon-rds-sql-server-using-amazon-quicksight/
-
-- https://www.clicdata.com/connectors/amazon-rds-sql/
-
-- https://www.linkedin.com/pulse/create-visualize-data-amazon-relational-database-rds-ms-nadendla-zpy3c/
