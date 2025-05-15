@@ -1,12 +1,11 @@
-# USER = "postgres"
-# PASSWORD = "Postgres26"
-# RDS_ENDPOINT = "postgresdb.ctousssecaxr.eu-north-1.rds.amazonaws.com"
-# DB_NAME = "retailDB" # 'postgres'
-# PORT = "5432"
-
-
 USER = "postgres"
-PASSWORD = "Postgres267"
+PASSWORD = "Postgres26"
 RDS_ENDPOINT = "postgresdb.ctousssecaxr.eu-north-1.rds.amazonaws.com"
-DB_NAME = "retailDB" # 'postgres'
+DB_NAME = "retailDB" 
+
+# USER = ""
+# PASSWORD = ""
+# RDS_ENDPOINT = ""
+# DB_NAME = "'
+
 PORT = "5432"
