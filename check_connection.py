@@ -4,7 +4,7 @@ from params import *
 def check_postgres_connection():
     try:
         conn = psycopg2.connect(
-            dbname= DB_NAME, # 'postgres',
+            dbname= DB_NAME, 
             user= USER,
             password= PASSWORD,
             host= RDS_ENDPOINT,
@@ -16,7 +16,7 @@ def check_postgres_connection():
         cur.close()
         conn.close()
         if result and result[0] == 1:
-            print("Connection successful!")
+            print(f"Connection successful for {DB_NAME}!")
             return True
         else:
             print("Connection failed: Unexpected query result.")

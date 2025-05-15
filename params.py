@@ -1,5 +1,5 @@
 USER = "postgres"
 PASSWORD = "Postgres26"
 RDS_ENDPOINT = "postgresdb.ctousssecaxr.eu-north-1.rds.amazonaws.com"
-DB_NAME = "retailDB"
+DB_NAME = "retailDB" # 'postgres'
 PORT = "5432"
