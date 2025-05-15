@@ -6,7 +6,7 @@ import pandas as pd
 # Connection 
 engine = create_engine(
     f"postgresql+psycopg2://{USER}:{PASSWORD}@{RDS_ENDPOINT}:{PORT}/{DB_NAME}",
-    connect_args={"sslmode": "require"}  # Required for AWS RDS
+    connect_args={"sslmode": "require"}  # pool_size=10, max_overflow=20
 )
 
 df = pd.read_csv("retail_data.csv")
@@ -46,11 +46,11 @@ retail_table = Table(
 metadata.create_all(engine)  # Creates table if not exists
 
 # Data insertion
-df.to_sql(
-    name="retail",
-    con=engine,
-    if_exists="replace",  # Use 'append' for non-initial import
-    index=False,
-    method="multi",  # Faster bulk insert
-    chunksize=1000
-)
+# df.to_sql(
+#     name="retail",
+#     con=engine,
+#     if_exists="replace",  # Use 'append' for non-initial import
+#     index=False,
+#     method="multi",  # Faster bulk insert
+#     chunksize=1000
+# )
