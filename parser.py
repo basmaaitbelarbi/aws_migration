@@ -1,14 +1,11 @@
 from sqlalchemy import create_engine, Column, Integer, String, Date, Float, MetaData, UniqueConstraint, Table
+from params import *
+
 import pandas as pd
+
 
 def is_duplicate(df, col): 
     return not df[col].is_unique    
-
-USER = "postgres"
-PASSWORD = "Postgres26"
-RDS_ENDPOINT = "postgresdb.ctousssecaxr.eu-north-1.rds.amazonaws.com"
-DB_NAME = "retailDB"
-PORT = "5432"
 
 # Connection 
 engine = create_engine(
