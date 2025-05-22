@@ -5,5 +5,5 @@ total_rows = "SELECT COUNT(*) FROM retail"
 # ... 
 
 with engine.connect() as conn:
-    result = conn.execute(text("GRANT CONNECT ON DATABASE retailDB TO postgres;"))
+    result = conn.execute(text(total_rows))
     print(result.scalar())
